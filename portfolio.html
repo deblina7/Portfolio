@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
  </head>
  <body>
    <div id="content">
@@ -16,13 +17,20 @@
 	 <div class="logo">
 	    <img src="Deblina__1_-removebg-preview.png">
 	 </div> <!-- logo -->
-	    <ul>
-		 <li><a href="#">About</a></li>
-		 <li><a href="#">New</a></li>
-		 <li><a href="#">Software</a></li>
-		 <li><a href="#">Work</a></li>
-		 <li><a href="#">Content</a></li>
-		</ul>
+	    <ul class="navigation">
+		 <li class="menuitem"><a href="#">About</a></li>
+		 <li class="menuitem"><a href="#">New</a>
+		  <div class="sub">
+		     <ul class="submenu">
+		       <li class="submenu_item"><a href="#">Email</a></li>
+			   <li class="submenu_item"><a href="#">Phone No.</a></li>
+		     </ul> <!--submenu -->
+			</div>
+		   </li>
+		 <li class="menuitem"><a href="#">Software</a></li>
+		 <li class="menuitem"><a href="#">Work</a></li>
+		 <li class="menuitem"><a href="#">Contact</a></li>
+		</ul> <!--navigation -->
 	 </div> <!-- header -->
     </header>
 	<div class="title">
@@ -32,22 +40,59 @@
 	 <a href="#"><b>Get Started</b></a>
 	</div> <!-- start -->
 	<footer>
-	  <div class="container">
-	    <div class="sec.About_us">
-		 <h2>About Us</h2>
-		 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-         </p>
-	    </div> <!--sec.about_us -->
-		<ul class="link">
-		 <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-         <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-		 <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-		 <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-		 <li><a href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+	  <div class="footer-container">
+	   <div class="row">
+	    <h2>&nbsp;Us</h2><br>
+	    <div class="us">
+		<ul>
+		 <li><a href="#">About us</a></li>
+		 <li><a href="#">Contact</a></li>
+		 <li><a href="#">Service</a></li>
+		 <li><a href="#">Privacy Policy</a></li>
 		</ul>
+	    </div> <!--sec.about_us -->
+		<h2><i>Get help</i></h2><br>
+		<div class="us">
+		 
+		<ul>
+		 <li><a href="#">FAQ</a></li>
+		 <li><a href="#">ReadMe</a></li>
+		 <li><a href="#">Source Code</a></li>
+		</ul>
+	    </div> <!--sec.help -->
+		<h2><i>&nbspFollow Us</i></h2>
+		<div class="us">
+		
+		<ul class="socials">
+		 <li><a href="https://www.linkedin.com" class="socila-link w-inline-block">
+		 <img src="https://assets.website-files.com/5ec440af4659932990a1020c/60f17a27f09c3f1f0df7ef59_icon%20(1).svg" loading="lazy" alt="linkedin"></a></li>
+         <li><a href="https://twitter.com" class="socila-link w-inline-block">
+		 <img src="https://assets.website-files.com/5ec440af4659932990a1020c/60f17a27f09c3fa670f7ef56_icon%20(4).svg" loading="lazy" alt="twitter"></a></li>
+		 <li><a href="https://www.instagram.com" class="socila-link w-inline-block">
+		 <img src="https://assets.website-files.com/5ec440af4659932990a1020c/60f17a27f09c3f768ef7ef57_icon%20(3).svg" loading="lazy" alt="instagram"></a></li>
+		 <li><a href="https://github.com" target="_blank" class="footer-social_link w-inline-block">
+		 <img src="https://global-uploads.webflow.com/5e067beb4c88a64e31622d4b/5e06b0d34c88a646d1642ac6_bxl-github.svg" loading="lazy" alt="git-hub"></a></li>
+		 <li><a href="https://facebook.com" class="socila-link w-inline-block">
+		 <img src="https://assets.website-files.com/5ec440af4659932990a1020c/60f17a27f09c3f7722f7ef58_icon%20(2).svg" loading="lazy" alt="facebook"></a></li>
+		</ul> <!--socials -->
+		</div> <!-- links -->
+		</div> <!--row -->
+		<div class= "contact-info">
+		 <label class="control-label " for="email">
+         Email
+         </label>
+        <div class="input-group">
+        <div class="input-group-addon">
+	    <span class="glyphicon glyphicon-envelope"></span> 
+        </div>
+        <input class="form-control" id="email" name="email" type="text"/>
+        </div>
+		</div> <!-- contact info -->
+		<div class= "footer-bottom">
+		  &copy; Copyrighted | Designed by Deblina Banerjee</p>
+		</div> <!-- footer-bottom -->
       </div> <!--container -->
 	</footer>
    </div> <!-- content -->
   </body>
 </html>
-  
